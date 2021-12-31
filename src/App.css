@@ -1,0 +1,310 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo img {
+  position: absolute;
+  width: 160px;
+  height: 36.02px;
+  left: 60px;
+  top: 60px;
+}
+
+.form {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top_Logo {
+  width: 100%;
+  position: relative;
+}
+
+.top_Logo .firstLine {
+  width: 11.05px;
+  height: 21.55px;
+  position: relative;
+  left: 46.92%;
+  right: 18.42%;
+  top: 11.96%;
+  bottom: 43.15%;
+  background: #3766e8;
+  border-radius: 100px;
+  transform: matrix(0.86, -0.52, 0.51, 0.86, 0, 0);
+}
+
+.top_Logo .secoundLine {
+  width: 11.05px;
+  height: 42.37px;
+  position: absolute;
+  left: 43.31%;
+  right: 55.02%;
+  top: -24.97%;
+  bottom: -6.3%;
+  background: #3766e8;
+  border-radius: 100px;
+  transform: matrix(0.86, -0.52, 0.51, 0.86, 0, 0);
+}
+
+.top_Logo .threeLine {
+  width: 11.05px;
+  height: 27.84px;
+  position: absolute;
+  left: 40%;
+  right: 78.34%;
+  top: 50.12%;
+  bottom: -8.13%;
+  background: #3766e8;
+  border-radius: 100px;
+  transform: matrix(0.86, -0.52, 0.51, 0.86, 0, 0);
+}
+
+.text_heading {
+  position: static;
+  width: 368px;
+  height: 60px;
+  left: 0px;
+  top: 72px;
+  padding: 10px 25px 77px 25px;
+}
+
+.text_heading h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #212121;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.pTag {
+  position: static;
+  width: 378px;
+  height: 37px;
+  left: 0px;
+  top: 148px;
+}
+
+.pTag p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  text-align: center;
+
+  color: #545454;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+
+/************************ input_Section  ************************/
+
+.input_Section {
+  width: 100%;
+}
+
+.icon_input {
+  margin: 10px 0;
+  display: grid;
+  position: relative;
+}
+
+.icon_input label {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  display: flex;
+  align-items: center;
+}
+
+.icon_input input,
+select {
+  width: 368px;
+  padding: 10px 10px 10px 23px;
+  border: 1px solid black;
+  outline: none;
+  margin: 10px 0;
+  background-color: transparent;
+  color: #545454;
+}
+
+.icon_input input:focus,
+select:focus {
+  border: 1px solid green;
+}
+
+.icon_input input:focus + i,
+select:focus + i {
+  color: green;
+}
+
+.icon_input i {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #545454;
+}
+
+.company_size {
+  width: 100%;
+}
+
+.company_size p {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.active {
+  background-color: #3766e8;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.company_size span {
+  margin: 15px 22.50px 0 0px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.company_size span:hover {
+  background-color: #3766e8;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.submit {
+  width: 368px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.submit input[type="submit"] {
+  position: static;
+  width: 368px;
+  height: 36px;
+  left: 91px;
+  top: 535px;
+  background: #3766e8;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 24px 0px;
+  cursor: pointer;
+}
+
+.trim_and_condition {
+  position: absolute;
+  width: 185px;
+  height: 19px;
+  left: 150px;
+  top: 650px;
+}
+
+.trim_and_condition p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #545454;
+}
+
+/* ************** media Query *************************** */
+@media screen and (max-width: 650px) {
+  .logo img {
+    position: absolute;
+    width: 150px;
+    left: 25px;
+    top: 25px;
+  }
+
+  .form {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .trim_and_condition {
+    left: 88px;
+    top: 550px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo img {
+    position: absolute;
+    width: 150px;
+    left: 25px;
+    top: 25px;
+  }
+
+  .form {
+    width: 98%;
+  }
+
+  .icon_input label,  .company_size p {
+    margin: 10px 10px;
+  }
+
+  .icon_input input, select{
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .icon_input i {
+    top: 62%;
+    left: 3.50%;
+    font-size: 1.10rem;
+  }
+
+  .company_size span {
+    margin: 15px 10.50px 0 5px;
+  }
+  
+  .submit input[type="submit"] {
+    width: 100%;
+  }
+  .trim_and_condition {
+    left: 88px;
+    top: 550px;
+  }
+
+  
+}
